@@ -1,0 +1,845 @@
+{ 
+
+      "intents": [   
+    
+        {
+    
+          "tag": "greeting",
+          "patterns": ["Hi","Hey","How are you","Is anyone there?", "Hello","Good day"],
+          "responses": ["Hey :-), communicate with our orientation chatbot to make sure your project is well built or to help you build one", "Hello, thanks for visiting", "Hi there, what can I do for you?","Hi there, how can I help?"]
+    },
+     {
+    
+          "tag": "Salutation",
+          "patterns": ["Salut",  "Comment vas-tu", "Y a-t-il quelqu'un ?", "Bonjour"],
+          "responses": ["Bonjour :-), communiquez avec notre chatbot d'orientation pour vous assurer que votre projet est bien construit ou pour vous aider a en construire un", "Bonjour, merci de votre visite", "Salut, que puis-je faire pour vous ?", "Salut la, comment puis-je aider?"]
+    
+     },
+      {
+    
+    "tag": "Choice",
+    
+          "patterns": ["I want some orientation's advice"],
+    
+          "responses": ["you want some orientation's advice. Choose between primary or higher education"]
+    
+          },
+    
+    {
+    
+    "tag": "Choix",
+    
+          "patterns": ["Je veux des conseils d'orientation"],
+    
+          "responses": ["vous voulez des conseils d'orientation. Choisissez entre l'enseignement primaire ou superieur"]
+    
+          },
+    
+          {
+    
+          "tag": "Primary",
+    
+          "patterns": ["I want some orientation's advice for primary education","primary education","primary"],
+    
+          "responses": ["What class are you in exactly this year?"]
+    
+          },
+    
+    {
+    
+          "tag": "Primaraire",
+    
+          "patterns": ["Je veux des conseils d'orientation pour l'enseignement primaire","enseignement primaire","primaire"],
+    
+          "responses": ["Dans quelle classe es-tu exactement cette annee ?"]
+    
+    
+    
+          },
+    
+          {
+    
+          "tag": "3rd year Class",
+    
+          "patterns": ["my class this year is the 3rd year exactly","3rd year"],
+    
+          "responses": ["You have the choice between 3 common core branches where the main subjects differ according to the coefficients, What are some of your favorite topics? Choose 3 according to your priorities (subjects of Islamic religion, Arabic, French, English, geo-history,mathematics, life and earth sciences, physics and chemistry, engineering sciences)","No branch is better than the other. To make it easier for you to choose between these 3 branches, ask yourself what are your favorite subjects? Choose 3 according to your priorities(subjects of Islamic religion, Arabic, French, English, geo-history,mathematics, life and earth sciences, physics and chemistry, engineering sciences)"]
+    
+    },
+    
+    {
+    
+          "tag": "3eme annee",
+    
+          "patterns": ["ma classe cette annee est exactement la 3eme annee","3eme annee"],
+    
+          "responses": ["Vous avez le choix entre 3 branches de tronc commun ou les sujets principaux different selon les coefficients, Quels sont certains de vos sujets de predilection ? Choisissez-en 3 selon vos priorites (matieres de religion islamique, arabe, francais, anglais, geo-histoire, mathematiques, sciences de la vie et de la terre, physique et chimie, sciences de l'ingenieur) "," Aucune filière n'est meilleure que l'autre. Pour vous faciliter le choix entre ces 3 branches, demandez-vous quelles sont vos matières préférées ? Choisissez-en 3 selon vos priorités (matières de religion islamique, arabe, français, anglais, géo-histoire, mathématiques, sciences de la vie et de la terre, physique et chimie, sciences de l'ingénieur)"]
+    
+    },
+    
+    {
+    
+    "tag": "literature",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are French, Arabic,geo-history","French, Arabic,geo-history"],
+    
+          "responses": ["To remind you, according to your priorities your favorite topics are French, Arabic,geo-history so we advice you to choose the Common core literature and human sciences"]
+    
+    },
+    
+    {
+    
+    "tag": "litterature",
+    
+          "patterns": ["Mes 3 sujets favoris selon mes priorites sont Francais, Arabe, geo-histoire","Francais, Arabe, geo-histoire"],
+    
+          "responses": ["Pour rappel, selon vos priorites vos sujets de predilection sont le francais, l'arabe, la geo-histoire donc nous vous conseillons de choisir le Tronc commun litterature et sciences humaines"]
+    
+    },
+    
+    {
+    
+          "tag": "scientific",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are mathematics, life and earth sciences, physics and chemistry","mathematics, life and earth sciences, physics and chemistry"],
+    
+          "responses": ["according to your priorities your favorite topics are mathematics, life and earth sciences, physics and chemistry so we advice you to choose the scientific Common Core"]
+    
+    },
+    
+    {
+    
+          "tag": "scientifique",
+    
+          "patterns": ["Mes sujets apres le Choix de 3 selon mes priorites sont les mathematiques, les sciences de la vie et de la terre, la physique et la chimie", "les mathematiques, les sciences de la vie et de la terre, la physique et la chimie"],
+    
+          "responses": ["Mes sujets apres le Choix de 3 selon mes priorites sont les mathematiques, les sciences de la vie et de la terre, la physique et la chimie", "les mathematiques, les sciences de la vie et de la terre, la physique et la chimie"]
+    
+    },
+    
+    {
+    
+          "tag": "Technological ",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are mathematics, physics and chemistry, engineering sciences","mathematics, physics and chemistry, engineering sciences"],
+    
+          "responses": ["according to your priorities your favorite topics are mathematics, physics and chemistry, engineering sciences so we advice you to choose the Technological Common Core"]
+    
+    },
+    
+    {
+    
+          "tag": "Technologique ",
+    
+          "patterns": ["Mes sujets apres le Choix de 3 selon mes priorites sont les mathematiques, la physique et la chimie, les sciences de l'ingenieur","les mathematiques, la physique et la chimie, les sciences de l'ingenieur"],
+    
+          "responses": ["selon vos priorites vos matieres de predilection sont les mathematiques, la physique-chimie, les sciences de l'ingenieur donc nous vous conseillons de choisir le Tronc Commun Technologique"]
+    
+    },
+    
+    {
+    
+          "tag": "Common core",
+    
+          "patterns": ["my class is the Common core"],
+    
+          "responses": ["what is your branch this year?(literature,scientific or Technological)","literature,scientific or Technological"]
+    
+    },
+    
+    {
+    
+          "tag": "Tronc commun",
+    
+          "patterns": ["ma classe est le tronc commun"],
+    
+          "responses": ["quelle est votre branche cette annee ?(litterature,scientifique ou technologique)","litterature,scientifique ou technologique"]
+    
+    },
+    
+    {
+    
+          "tag": "litteraturee",
+    
+          "patterns": ["My branch this year is literature","literature"],
+    
+          "responses": ["You have the choice between 2 branches where the main subjects differ according to the coefficients, What are some of your favorite topics? Choose 3 according to your priorities (Arabic, geo-history, philosophy and living languages, Literature, Hadith wa tafssir, Sciences of the Arabic language)"]
+    
+    },
+    
+    {
+    
+          "tag": "litterature",
+    
+          "patterns": ["Ma branche cette annee est la litterature","la litterature"],
+    
+          "responses": ["Vous avez le choix entre 2 branches ou les matieres principales different selon les coefficients, Quels sont certains de vos sujets de predilection ? Choisissez-en 3 selon vos priorites (Arabe, geo-histoire, philosophie et langues vivantes, Littérature , Hadith wa tafssir, Sciences de la langue arabe)"]
+    
+    },
+    
+    {
+    
+    "tag": "humanities",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are Arabic, geo-history, philosophy and living languages","Arabic, geo-history, philosophy and living languages"],
+    
+          "responses": ["according to your priorities your favorite topics are Arabic, geo-history, philosophy and living languages so we advice you to choose The arts and humanities branch"]
+    
+    },
+    
+    {
+    
+    "tag": "sciences humaines",
+    
+          "patterns": ["Mes sujets favoris après le choix 3 selon mes priorites sont l'arabe, la geo-histoire, la philosophie et les langues vivantes","Arabe, la geo-histoire, la philosophie et les langues vivantes"],
+    
+          "responses": ["selon vos priorites vos sujets de predilection sont l'arabe, la geo-histoire, la philosophie et les langues vivantes donc nous vous conseillons de choisir la branche arts et sciences humaines"]
+    
+    },
+    
+    {
+    
+          "tag": "Arabic",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are Literature, Hadith wa tafssir, Sciences of the Arabic language","Literature, Hadith wa tafssir, Sciences of the Arabic language"],
+    
+          "responses": ["according to your priorities your favorite topics are Literature, Hadith wa tafssir, Sciences of the Arabic language so we advice you to choose The branch of the Arabic language"]
+    
+    },
+    
+    {
+    
+          "tag": "arabe",
+    
+          "patterns": ["Mes sujets favoris apres avoir choisi 3 selon mes priorites sont Littérature, Hadith wa tafssir, Sciences de la langue arabe","Litterature, Hadith wa tafssir, Sciences de la langue arabe"],
+    
+          "responses": ["selon vos priorites vos sujets favoris sont Litterature, Hadith wa tafssir, Sciences de la langue arabe donc nous vous conseillons de choisir La branche de la langue arabe"]
+    
+    },
+    
+    {
+    
+          "tag": "scientific",
+    
+          "patterns": ["My branch this year is scientific","scientific"],
+    
+          "responses": ["the mathematical sciences sector requires a lot of work and dedication. To make it easier for you to choose between these 2 branches, ask yourself what are your favorite subjects? Choose 3 according to your priorities (mathematics, engineering sciences, physics and chemistry,life and earth sciences)"]
+    
+    },
+    
+    {
+    
+          "tag": "scientifiquee",
+    
+          "patterns": ["Ma branche cette annee est scientifique","scientifique"],
+    
+          "responses": ["la filiere des sciences mathematiques demande beaucoup de travail et de devouement. Pour vous faciliter le choix entre ces 2 filieres, demandez-vous quelles sont vos matieres de predilection ? Choisissez-en 3 selon vos priorites (mathematiques, sciences de l'ingenieur , physique et chimie, sciences de la vie et de la terre)"]
+    
+    },
+    
+    {
+    
+    "tag": "exprerimental",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are physics and chemistry,life and earth sciences, mathematics","physics and chemistry,life and earth sciences, mathematics"],
+    
+          "responses": ["according to your priorities your favorite topics are physics and chemistry,life and earth sciences, mathematics that's why we advice you to choose The branch of experimental sciences"]
+    
+    },
+    
+    {
+    
+    "tag": "experimentaal",
+    
+          "patterns": ["Mes matieres apres le choix de 3 selon mes priorites sont la physique et la chimie, les sciences de la vie et de la terre, les mathematiques","la physique et la chimie, les sciences de la vie et de la terre, les mathematiques"],
+    
+          "responses": ["selon vos priorites vos sujets choisis sont la physique et la chimie, les sciences de la vie et de la terre, les mathematiques c'est pourquoi nous vous conseillons de choisir la branche des sciences experimentales"]
+    
+    },
+    
+    {
+    
+          "tag": "Math",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are mathematics, engineering sciences, physics and chemistry","mathematics, engineering sciences, physics and chemistry"],
+    
+          "responses": ["according to your priorities your favorite topics are mathematics, engineering sciences, physics and chemistry so we advice you to choose The branch of Mathematical Sciences"]
+    
+    },
+    
+    {
+    
+          "tag": "Mathematiquees",
+    
+          "patterns": ["Mes sujets apres le choix de 3 selon mes priorites sont les mathematiques, les sciences de l'ingenieur, la physique et la chimie","les mathematiques, les sciences de l'ingenieur, la physique et la chimie"],
+    
+          "responses": ["selon vos priorites vos sujets sont les mathematiques, les sciences de l'ingenieur, la physique et la chimie donc nous vous conseillons de choisir La branche des Sciences Mathematiques"]
+    
+    },
+    
+    {
+    
+          "tag": "techno 1Y",
+    
+          "patterns": ["My branch this year is technological","technological"],
+    
+          "responses": ["To make it easier for you to choose between these 2 branches, ask yourself what are your favorite subjects? Choose 3 according to your priorities (design unit,Production unit,CADM: Computer Aided Design and Manufacturing, Acquisition processing and communication of information, Power supply distribution and conversion, Power transmission )"]
+    
+    },
+    
+    {
+    
+          "tag": "techno 1ere annee",
+    
+          "patterns": ["Ma branche cette annee est technologique"],
+    
+          "responses": ["Pour vous faciliter le choix entre ces 2 filieres, demandez-vous quelles sont vos matieres preferees ? Choisissez-en 3 selon vos priorites (unite d'etude, unite de production, CADM : Conception et Fabrication Assistees par Ordinateur, Traitement des acquisitions et communication d'informations, Distribution et conversion d'alimentation, Transmission d'energie )"]
+    
+    },
+    
+    {
+    
+    "tag": "mechanical",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are design unit,Production unit,CADM: Computer Aided Design and Manufacturing","design unit,Production unit,CADM: Computer Aided Design and Manufacturing"],
+    
+          "responses": ["according to your priorities your favorite topics are design unit,Production unit,CADM: Computer Aided Design and Manufacturing so we advice you to choose the mechanical science and technology branch"]
+    
+    },
+    
+    {
+    
+    "tag": "mecanique",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are design unit,Production unit,CADM: Computer Aided Design and Manufacturing","design unit,Production unit,CADM: Computer Aided Design and Manufacturing"],
+    
+          "responses": ["according to your priorities your favorite topics are design unit,Production unit,CADM: Computer Aided Design and Manufacturing so we advice you to choose the mechanical science and technology branch"]
+    
+    },
+    
+    {
+    
+    "tag": "mecanique",
+    
+          "patterns": ["Mes sujets favoris apres le choix 3 selon mes priorites sont unite de conception,unite de production,CADM : conception et fabrication assistees par ordinateur","unite de conception,unite de production,CADM : conception et fabrication assistees par ordinateur"],
+    
+          "responses": ["selon vos priorites vos sujets favoris sont unite de conception, unite de production, CADM : conception et fabrication assistees par ordinateur, nous vous conseillons donc de choisir la branche des sciences et technologies mecaniques"]
+    
+    },
+    
+    {
+    
+          "tag": "electrical",
+    
+          "patterns": ["My favorite topics after Choosing 3 according to my priorities are Acquisition processing and communication of information, Power supply distribution and conversion, Power transmission ","Acquisition processing and communication of information, Power supply distribution and conversion, Power transmission "],
+    
+          "responses": ["according to your priorities your favorite topics are Acquisition processing and communication of information, Power supply distribution and conversion, Power transmission so we advice you to choose the Electrical science and technology branch"]
+    
+    },
+    {
+    "tag": "electrique",
+    
+          "patterns": ["Mes sujets preferes apres le choix 3 selon mes priorites sont le traitement d'acquisition et la communication d'informations, la distribution et la conversion d'alimentation électrique, la transmission d'énergie "," le traitement d'acquisition et la communication d'informations, la distribution et la conversion d'alimentation electrique, la transmission d'energie "],
+    
+          "responses": ["selon vos priorites vos sujets favoris sont Acquisition traitement et communication de l'information, Distribution et conversion d'énergie, Transmission d'énergie donc nous vous conseillons de choisir la branche Sciences et technologies electriques"]
+    
+    },
+    
+    {
+    
+          "tag": "higher",
+    
+          "patterns": ["I'm confused, I want advices for higher education" , "I want ideas or advice for higher education","advice for higher" ],
+    
+          "responses": ["you are interested in the field of engineering or the field of medicine or another field? , in which field you are interested among these: medicine, engineering, other"]
+    
+    },
+    
+    {
+    
+          "tag": "superieur",
+    
+          "patterns": ["Je suis confus, je veux des conseils pour l'enseignement superieur" , "Je veux des idees ou des conseils pour l'enseignement superieur","des conseils pour l'enseignement superieur" ],
+    
+          "responses": ["vous etes interesse par le domaine de l'ingenierie ou le domaine de la medecine ou un autre domaine ? , dans quel domaine vous etes interesse parmi ceux-ci : medecine, ingenierie, autre"]
+    
+    },
+    
+    {
+    
+          "tag": "Medecine",
+    
+          "patterns": ["I am interested in the field of medicine and I like everything related to health science","I'm obsessed with the field of health and I want medicine","field of health"],
+    
+          "responses": ["you have the choice between three options: medicine, dentistry and pharmacy, you will be assigned to one of these options depending on your grade in the medical examination","your score in the contest will impact the choice between the three options:medicine, dentistry and pharmacy"]
+    
+          },
+    
+    {
+    
+          "tag": "Medecine",
+    
+          "patterns": ["Je m'interesse au domaine de la medecine et j'aime tout ce qui touche aux sciences de la sante","Je suis obsede par le domaine de la sante et je veux la medecine","domaine de la sante"],
+    
+          "responses": ["vous avez le choix entre trois options : medecine, medecine dentaire et pharmacie, vous serez affecte à l'une de ces options en fonction de votre note à l'examen medical","votre score au concours aura un impact sur le choix entre les trois options : medecine, dentisterie et pharmacie"]
+    
+          },
+    
+          {
+    
+          "tag": "options",
+    
+          "patterns": ["i want the option medecine which are the subjects that I must master before the passage of the medical contest","what are the subjects that I need to focus on them so that I can choose the medicine option","subjects and medicine options"],
+    
+          "responses": ["the subjects you must master before passing the medical exam are: natural sciences, chemistry, physics, mathematics","the subjects that you must focus on so that you can choose the medicine option are:natural sciences, chemistry, physics, mathematics"]
+    
+    
+    
+          },
+    
+    {
+    
+          "tag": "options",
+    
+          "patterns": ["je veux l'option medecine quels sont les sujets que je dois maitriser avant le passage du concours medical", "quels sont les sujets sur lesquels je dois me concentrer pour pouvoir choisir l'option medecine", "sujets et options de medecine"],
+    
+          "responses": ["les matieres que vous devez maitriser avant de passer l'examen medical sont : les sciences naturelles, la chimie, la physique, les mathematiques", "les matieres sur lesquelles vous devez vous concentrer pour pouvoir choisir l'option medecine sont : les sciences naturelles, la chimie , physique, mathematiques"]
+    
+    
+    
+          },
+    
+          {
+    
+          "tag": "place",
+    
+          "patterns": ["how can i know in which city i will take the exam","How do i know where to take the test","city where i will take the test"],
+    
+          "responses": ["you will know the city where you will take the test through the summons","Through the summons sheet, you can find out where the exam will take place and even the time"]
+    
+          },
+    
+    {
+    
+          "tag": "lieu",
+    
+          "patterns": ["comment puis-je savoir dans quelle ville je vais passer l'examen","Comment puis-je savoir ou passer le test","ville ou je vais passer le test"],
+    
+          "responses": ["vous connaitrez la ville où vous passerez l'examen grace à la convocation","Grace à la feuille de convocation, vous pourrez savoir ou se déroulera l'examen et meme l'heure"]
+    
+          },
+    
+          {
+    
+          "tag": "ville",
+    
+          "patterns": ["how I will know the city where I will study if I pass my exam","If I pass the test, how do I choose the college in which I continue my studies?","choose the university"],
+    
+          "responses": ["you will know the city where you will study depends on the city where you obtained your baccalaureate","The city in which you obtained your baccalaureate determines where you will complete your studies"]
+    
+    },
+    
+    {
+    
+          "tag": "ville",
+    
+          "patterns": ["comment je saurai la ville où j'étudierai si je réussis mon examen","Si je réussis le test, comment choisir le collège dans lequel je poursuis mes études ?","choisir l'université" ],
+    
+          "responses": ["tu sauras que la ville où tu vas étudier dépend de la ville où tu as obtenu ton bac","La ville dans laquelle tu as obtenu ton bac détermine où tu vas terminer tes études"]
+    
+    },
+    
+    {
+    
+          "tag": "engineering",
+    
+            "patterns":["I am interested in the field of engineering I would like you to help me in order to facilitate my orientation"],
+    
+            "responses":[" You are interested in the field of enginnering.I would like to know first where do you want to continue your studies?Choose one according to your priorities (Morocco,France)"]
+    
+          },
+    
+          {
+    
+            "tag":"Morocco",
+    
+             "patterns":["I would like to continue my studies in Morocco"],
+    
+             "responses":["You want to continue your studies in Morocco.Do you want to integrate an engineering school directly after the baccalaureate or do you prefer to prepare yourself before?"]
+    
+          },
+    
+          {
+    
+             "tag":"Preparing first",
+    
+              "patterns":[" I want to prepare myself first  so that I can be sure that I will make the right decisions"],
+    
+              "responses":["You want to prepare yourself first, in this case the best choise you can make is to integrate the prepatory classes.Do you prefer Math or Physics?. Choose one(Maths,Physics)"]
+    
+          },
+    
+          {
+    
+              "tag":"Math",
+    
+              "patterns":["I prefer Math"],
+    
+              "responses":["You prefer Maths, in this case you should choose the MP sector in the prepatory classes"]
+    
+          },
+    
+          {
+    
+              "tag":"Physics",
+    
+              "patterns":["I prefer Physics"],
+    
+              "responses":["You prefer Physics, in this case you should choose the PC sector in the prepatory classes"]
+    
+    
+    
+          },
+    
+          {          
+    
+          "tag":"Directly",
+    
+           "patterns":["I want to integrate an enginnering school directly after the baccalaureate"],
+    
+           "responses":["You want to integrate an enginnering school directly after the baccalaureate, what are you  intested in the most; please choose one(administrative management,agriculture,technological innovation)?"]
+    
+          },
+    
+          {
+    
+           "tag":"Agriculture",
+    
+               "patterns":["I am intested in agriculture"],
+    
+               "responses":["You are interested in agriculture. You should continue your studies in IAV"]
+    
+          },
+    
+          {
+    
+               "tag":"Administration management",
+    
+               "patterns":["I am interested in administration management"],
+    
+               "responses":["You are interested in administration management. You should continue your studies in ENSA"]
+    
+          },
+    
+          {
+    
+               "tag":"technological innovation",
+    
+                "patterns":["I am interested in technological innovation "],
+    
+               "responses":["You are interested in technological innovation. You should continue your studies in ENSAM"]
+    
+          },
+    
+          {
+    
+               "tag": "place",
+    
+          "patterns": ["How can i know in which city i will take the exam"],
+    
+          "responses": ["You will know the city where you will take the test through the summons"]
+    
+          },
+    
+          {
+    
+          "tag": "city",
+    
+          "patterns": ["how I will know the city where I will study if I pass my exam"],
+    
+          "responses": ["The city where you will study depends on your exam's ranking"]
+    
+          },
+    
+          {
+    
+          "tag":"France",
+    
+             "patterns":["I would like to continue my studies in France"],
+    
+             "responses":["You want to continue your studies in France.Do you want to integrate an engineering school directly after the baccalaureate or do you prefer to prepare yourself before?"]
+    
+          },
+    
+          {
+    
+             "tag":"Preparing first",
+    
+              "patterns":[" I want to prepare myself first  so that I can be sure that I will make the right decisions"],
+    
+              "responses":["You want to prepare yourself first, in this case the best choise you can make is to integrate the prepatory classes.Do you prefer Math or Physics?. Choose one(Maths,Physics)"]
+    
+          },
+    
+          {
+    
+              "tag":"Math",
+    
+              "patterns":["I prefer Math"],
+    
+              "responses":["You prefer Maths, in this case you should choose the MP sector in the prepatory classes"]
+    
+          },
+    
+          {
+    
+              "tag":"Physics",
+    
+              "patterns":["I prefer Physics"],
+    
+              "responses":["You prefer Physics, in this case you should choose the PC sector in the prepatory classes"]
+    
+          },
+    
+          {
+    
+              "tag":"Directly",
+    
+              "patterns":["I want to integrate an enginnering school directly after the baccalaureate"],
+    
+             "responses":["You want to integrate an enginnering school directly after the baccalaureate,in this case the formations of all engineering schools,post-baccalaureate, in France,  are good and similar. It all depends on the branch you want to choose."]
+            },
+
+            {
+            
+            "tag":"Directement",
+            
+                      "patterns":["Je veux integrer une ecole d'ingenieurie directement apres le baccalaureat","directement apres le baccalaureat"],
+            
+                      "responses":["Vous voulez integrer une ecole d'ingenieurie directement apres le baccalaureat. Etes vous interesses par la programmation et le codage?"]
+            
+            },
+            
+            
+            
+            {
+            
+            "tag":"Yes:programming and coding",
+            
+                       "patterns":["Yes","yes , I am interested in programming and coding"],
+            
+                       "responses":["You are interested in programming and coding. You should choose the field of computer science"]
+            
+            },
+            
+            {
+            
+            "tag":"Oui:programmation et codage",
+            
+                       "patterns":["Oui","Oui , Je suis interesse par la programmation et le codage"],
+            
+                       "responses":["Vous etes interesses par la programmation et le codage. Vous devez choisir la filiere informatique"]
+            
+            },
+            
+            {
+            
+            "tag":"No:programming and coding",
+            
+                        "patterns":["No","No, I am not interested in programming and coding"],
+            
+                         "responses":["You are not interested in programming and coding.Please choose one according to your priorities(Movement science,analysis,calculation,symbolic logic,soil cultivation,the constituents of matter,production)"]
+            
+            },
+            {
+            "tag":"Non:programmation et codage",
+            
+                        "patterns":["Non","Non, Je ne suis pas interesse par la programmation et le codage"],
+            
+                         "responses":["Vous n'etes pas interesses par la programmation et le codage.Veuillez choisir selon vos priorites(Science du mouvement,analyse,calcul,logique symbolique,culture du sol,les constituants de la matiere)"]
+            
+            },
+            
+            {
+            
+            "tag":"Movement science",
+            
+                         "patterns":["Movement science","I am interested in Movement science"],
+            
+                          "responses":["You are interested in Movement science. The best choice you can make is the mechanics fields"]
+            
+            },
+            
+            {
+            
+            "tag":"Science du mouvement",
+            
+                         "patterns":["Science du mouvement","Je suis interesse par la science du mouvement"],
+            
+                          "responses":["Vous etes interesses par la science du mouvem:ent. La meilleure filiere que vous pourriez choisir est la mecanique"]
+            
+            },
+            
+            {
+            
+            "tag":"analysis",
+            
+                          "patterns":["analysis","I am a good analyst"," I like to analyse"],
+            
+                          "responses":["You like to analyse.The best choice you can make is the Data fields"]
+            
+            },
+            
+            {
+            
+            "tag":"analyse",
+            
+                          "patterns":["analyse","Je suis un bon analyste"," j'aime analyser"],
+            
+                          "responses":["Vous etes un bon analyste.La meilleure filière que vous pouvez choisir est la Data"]
+            
+            },
+            
+            {
+            
+            "tag":"calculation",
+            
+                 "patterns":["Calculation","I am interested in calculation"],
+                 "responses":["'You are interested in calculation. The best choice you could make is to specialize in Maths."]
+            },   
+            
+            {
+            
+            "tag":"calcul",
+            
+                          "patterns":["Calcul","Je suis interesse par le calcul"],
+            
+                        "responses":["Vous etes interesses par le calcul. Le meilleur choix que vous pourriez faire est de vous specialiser en Maths"]
+            
+                  },
+            
+            {
+            
+            "tag":"symbolic logic",
+            
+                           "patterns":["symbolic logic","I am interested in symbolic logic"],
+            
+                           "responses":["You are interested in symbolic logic.The best choice you can make is the Logistics fields"]
+            
+            },
+            
+            {
+            
+            "tag":"logique symbolique",
+            
+                           "patterns":["logique symbolique","Je suis interesse par la logique symbolique"],
+            
+                           "responses":["Vous etes interesses par la logique symbolique.La meilleure filiere que vous pourriez choisir est la logistique"]
+            
+            },
+            
+            {
+            
+            "tag":" constituents of matter",
+            
+                           "patterns":["the constituents of matter","I would like to know more about the constituents of matter","I am interested in the studies of matter"],
+            
+                            "responses":["You are interested in the constituents of matter.The best choice you can make is the chemistry fields"]
+            
+            },
+            
+            {
+            
+            "tag":"Constituants matiere",
+            
+                           "patterns":["Les constituation de la matiere","Je veux savoir plus sur les constituants de la matiere","Je suis interesse par l'etude de la matiere"],
+            
+                            "responses":["Vous etes interesses par les constituants de la matiere.La meilleure filiere que vous pourriez choisir est la chimie"]
+            
+            },
+            
+            {
+            
+            "tag":"soil cultivation",
+            
+                           "patterns":["soil cultivation","I would like to know more about the soil cultivation","I am intested in the soil cultivation"],
+            
+                            "responses":["You are interested in the the soil cultivation.The best choice you can make is the agriculture fields"]
+            
+            },
+            
+            {
+            
+            "tag":"Culture sol",
+            
+                           "patterns":["Culture du sol","Je veux savoir plus sur la culture du sol","Je suis interesse par la culture du sol"],
+            
+                            "responses":["Vous etes interesses par la culture du sol.Le meilleure filiere que vous pourriez choisir est l'agriculture"]
+            
+            },
+            
+            {
+            
+            "tag":"Production",
+            
+                  "patterns":["Production","I am interested in production"],
+            
+                   "responses":["You are interested in production.The best choice you can make is the industry fields"]
+            
+            },
+            
+            {
+            
+            "tag":"Production",
+            
+                   "patterns":["Production","Je suis interesse par la production"],
+            
+                  "responses":["Vous etes interesses par la production.Le meilleure filiere que vous pourriez choisir est l'industrie"]
+            
+           
+          },
+    
+          {
+    
+             "tag": "thanks",
+    
+          "patterns": ["merci","Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+    
+          "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    
+          },
+    
+    {
+    
+             "tag": "merci",
+    
+          "patterns": ["merci", "C'est utile", "Merci beaucoup !"],
+    
+          "responses": ["Heureux de vous aider !", "A tout moment !", "C'est avec plaisir"]
+    
+          },
+    
+          {
+    
+          "tag": "goodbye",
+    
+          "patterns": ["Bye", "See you later", "Goodbye"],
+    
+          "responses": ["See you later, thanks for visiting","Have a nice day", "Bye! Come back again soon."]
+    
+    },
+    
+    {
+    
+          "tag": "au revoir",
+    
+          "patterns": [ "A plus tard", "Au revoir"],
+    
+          "responses": ["A plus tard, merci de votre visite","Bonne journee", "Au revoir ! Revenez bientôt."]
+    
+    }
+    
+      ]
+    
+}
+    
