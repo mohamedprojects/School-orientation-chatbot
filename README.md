@@ -1,4 +1,4 @@
-# School-orientation-chatbot-
+# School-orientation-chatbot
 
 Chatbots, as the name suggests, are computer programs built to simulate human conversations.
 
