@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+
+<!-- chatbox section start -->
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/fluency/48/undefined/chatbot.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Ori. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='jquery-3.6.0.js')}}"></script>
+
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    
+    <!-- navbar section start -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Orienta<span>tion.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about.html" class="menu-btn">About</a></li>
+                <li><a href="#education.html" class="menu-btn">higher education</a></li>
+                <li><a href="#contact.html" class="menu-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Ori</div>
+                <div class="text-3">And I'm an <span class="typing">Advice and guidance in Morocco </span></div>
+                <a href="#about.html">More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About us</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="static/images/b.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text"> I'm Ori <span class="typing-2"></span></div>
+                    <p>Orientation is the leading guidance and education platform in Morocco.Middle and high school students are subjected to many questions from a very young age regarding their career guidance. The decisions they have to make can be decisive for the rest of their lives.
+
+                        You are a young college student and hesitate about the next steps to give your school curriculum?
+                        
+                        You are a second-grader and hesitate between the scientific, economic and literary fields?
+                        
+                        Currently in the final year, do you need information about the different possibilities available to you in terms of secondary education?
+                        
+                        You are parents, and would like to find out about the training courses that correspond to your child’s profile?
+                        
+                        We have decided to give you a hand through our site which contains a chat bot that is ready to answer you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section start -->
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title">Higher education</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Engineering </div>
+                        <p>There are dozens and dozens of different types of engineering, but when it comes down to the basics, engineering is about using specialized bases of knowledge to solve a problem. Since we encounter a wide variety of problems, we have an equally wide range of engineering disciplines, many of which are highly specialized, designed to solve those problems.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Medecine</div>
+                        <p>Medecine is the education and vocational training for medical care, health care, and social welfare students. Its objective is for students to acquire knowledge and skills related to biological sciences, humanities, and medical sciences that are necessary for performing the medical profession in a particular course.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Economy</div>
+                        <p>In a world based on the exchange of goods and services, mastery of knowledge and economic tools is essential. If the numbers don’t scare you and you have a good analytical mind, the jobs of the economy are for you.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact us</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Orientation.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Rabat, Morocco</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">Orientation@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message us</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+	<footer>
+     <span class="far fa-copyright"> 2022 All rights reserved.</span>
+    </footer>
+</body>
+</html>
